@@ -11,18 +11,8 @@
 
     <bean id="myPet"
           class="com.evgeniy.springcourse.Cat"
-          scope="prototype"
           init-method="init"
           destroy-method="destroy">
-    </bean>
-
-    <bean id="myPerson"
-          class="com.evgeniy.springcourse.Person"
-          scope="prototype">
-        <constructor-arg ref="myPet"/>
-
-        <property name="name" value="${person.name}"/>
-        <property name="age" value="${person.age}"/>
     </bean>
 
 </beans>
