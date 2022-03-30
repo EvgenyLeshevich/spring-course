@@ -4,15 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.evgeniy.springcourse</groupId>
-    <artifactId>spring-course</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>spring-course-rest-client</module>
-    </modules>
-    <packaging>pom</packaging>
+    <groupId>com.evgeniy</groupId>
+    <artifactId>spring-course-rest-client</artifactId>
+    <version>1</version>
+    <packaging>war</packaging>
 
-    <name>spring-course Maven Webapp</name>
+    <name>spring-course-rest-client Maven Webapp</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
@@ -23,10 +20,6 @@
 
         <spring-version>5.3.17</spring-version>
         <jackson-databind-version>2.13.2.2</jackson-databind-version>
-        <javax.servlet-version>4.0.1</javax.servlet-version>
-        <hibernate-core-version>5.6.7.Final</hibernate-core-version>
-        <postgresql-version>42.3.3</postgresql-version>
-        <c3p0-version>0.9.5.5</c3p0-version>
         <lombok-version>1.18.22</lombok-version>
     </properties>
 
@@ -45,40 +38,9 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-orm</artifactId>
-            <version>${spring-version}</version>
-        </dependency>
-
-        <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>${jackson-databind-version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>${javax.servlet-version}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>${hibernate-core-version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>${postgresql-version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.mchange</groupId>
-            <artifactId>c3p0</artifactId>
-            <version>${c3p0-version}</version>
         </dependency>
 
         <dependency>
@@ -91,7 +53,7 @@
     </dependencies>
 
     <build>
-        <finalName>spring-course</finalName>
+        <finalName>spring-course-rest-client</finalName>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
                 <plugin>
