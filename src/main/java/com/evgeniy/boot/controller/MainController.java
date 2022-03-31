@@ -63,4 +63,10 @@ public class MainController {
 
         return "Employee with ID = " + id + " was deleted";
     }
+
+    @GetMapping("/employees/name/{name}")
+    public List<Employee> showAllEmployeesByName(@PathVariable("name") String name){
+
+        return employeeService.findAllEmployeesByName(name);
+    }
 }
