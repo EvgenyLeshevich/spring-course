@@ -1,4 +1,4 @@
-package com.evgeniy.exception_handling;
+package com.evgeniy.boot.exception_handling;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

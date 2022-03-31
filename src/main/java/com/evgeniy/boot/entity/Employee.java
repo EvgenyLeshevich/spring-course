@@ -1,4 +1,4 @@
-package com.evgeniy.entity;
+package com.evgeniy.boot.entity;
 
 import lombok.*;
 

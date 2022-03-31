@@ -1,4 +1,4 @@
-package com.evgeniy.exception_handling;
+package com.evgeniy.boot.exception_handling;
 
 public class NoSuchEmployeeException extends RuntimeException {
 

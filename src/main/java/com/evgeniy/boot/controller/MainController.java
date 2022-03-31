@@ -1,8 +1,9 @@
-package com.evgeniy.controller;
+package com.evgeniy.boot.controller;
 
-import com.evgeniy.entity.Employee;
-import com.evgeniy.exception_handling.NoSuchEmployeeException;
-import com.evgeniy.service.EmployeeService;
+
+import com.evgeniy.boot.entity.Employee;
+import com.evgeniy.boot.exception_handling.NoSuchEmployeeException;
+import com.evgeniy.boot.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

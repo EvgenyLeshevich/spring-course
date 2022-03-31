@@ -1,10 +1,10 @@
-package com.evgeniy.service;
+package com.evgeniy.boot.dao;
 
-import com.evgeniy.entity.Employee;
+import com.evgeniy.boot.entity.Employee;
 
 import java.util.List;
 
-public interface EmployeeService {
+public interface EmployeeDAO {
 
     List<Employee> getAllEmployees();
 

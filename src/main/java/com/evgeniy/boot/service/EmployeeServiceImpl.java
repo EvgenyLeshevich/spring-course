@@ -1,7 +1,7 @@
-package com.evgeniy.service;
+package com.evgeniy.boot.service;
 
-import com.evgeniy.dao.EmployeeDAO;
-import com.evgeniy.entity.Employee;
+import com.evgeniy.boot.dao.EmployeeDAO;
+import com.evgeniy.boot.entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -15,7 +15,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     private EmployeeDAO employeeDAO;
 
     @Override
-    @Transactional(readOnly = true)
+    @Transactional
     public List<Employee> getAllEmployees() {
         return employeeDAO.getAllEmployees();
     }
@@ -27,7 +27,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    @Transactional(readOnly = true)
+    @Transactional
     public Employee getEmployee(Long id) {
         return employeeDAO.getEmployee(id);
     }

@@ -1,4 +1,4 @@
-package com.evgeniy.exception_handling;
+package com.evgeniy.boot.exception_handling;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
